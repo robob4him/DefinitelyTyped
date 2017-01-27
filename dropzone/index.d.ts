@@ -29,7 +29,7 @@ declare namespace Dropzone {
 	}
 
 	export interface DropzoneOptions {
-		url?: string;
+		url?: string | () => string;
 		method?: string;
 		withCredentials?: boolean;
 		parallelUploads?: number;
